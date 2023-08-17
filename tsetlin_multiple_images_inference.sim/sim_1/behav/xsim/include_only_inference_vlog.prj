@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ipshared/ec67/hdl" --include "../../../../tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ipshared/34f8/hdl" --include "../../../../tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ipshared/25b7/hdl/verilog" --include "../../../../tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ipshared/896c/hdl/verilog" --include "D:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../tsetlin_multiple_images_inference.srcs/sources_1/imports/Vivado Projects/class_predictor.v" \
+"../../../../tsetlin_multiple_images_inference.srcs/sources_1/imports/Vivado Projects/clause_and_sum.v" \
+"../../../../tsetlin_multiple_images_inference.srcs/sources_1/imports/Vivado Projects/clause_class_decoding.v" \
+"../../../../tsetlin_multiple_images_inference.srcs/sources_1/imports/Vivado Projects/clause_compute.v" \
+"../../../../tsetlin_multiple_images_inference.srcs/sources_1/imports/Vivado Projects/literal_generation.v" \
+"../../../../tsetlin_multiple_images_inference.srcs/sources_1/imports/Vivado Projects/summation.v" \
+"../../../../tsetlin_multiple_images_inference.srcs/sources_1/imports/Vivado Projects/include_only_inference.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
