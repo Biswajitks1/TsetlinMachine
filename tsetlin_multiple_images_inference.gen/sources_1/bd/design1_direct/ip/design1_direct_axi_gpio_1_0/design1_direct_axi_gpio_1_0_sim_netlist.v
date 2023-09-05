@@ -1,10 +1,11 @@
-// Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+// Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Mon Apr  3 11:12:43 2023
-// Host        : LAPTOP-UPJ8ANHP running 64-bit major release  (build 9200)
+// Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+// Date        : Tue Sep  5 13:09:56 2023
+// Host        : LAPTOP-LQMFOCT1 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_gpio_1_0/design1_direct_axi_gpio_1_0_sim_netlist.v
+//               e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_gpio_1_0/design1_direct_axi_gpio_1_0_sim_netlist.v
 // Design      : design1_direct_axi_gpio_1_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,7 +13,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "design1_direct_axi_gpio_1_0,axi_gpio,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "axi_gpio,Vivado 2020.2" *) 
+(* CHECK_LICENSE_TYPE = "design1_direct_axi_gpio_1_0,axi_gpio,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "axi_gpio,Vivado 2023.1" *) 
 (* NotValidForBitStream *)
 module design1_direct_axi_gpio_1_0
    (s_axi_aclk,
@@ -35,9 +36,9 @@ module design1_direct_axi_gpio_1_0
     s_axi_rvalid,
     s_axi_rready,
     gpio_io_i);
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 S_AXI_ACLK CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME S_AXI_ACLK, ASSOCIATED_BUSIF S_AXI, ASSOCIATED_RESET s_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design1_direct_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input s_axi_aclk;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 S_AXI_ACLK CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME S_AXI_ACLK, ASSOCIATED_BUSIF S_AXI, ASSOCIATED_RESET s_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design1_direct_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input s_axi_aclk;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 S_AXI_ARESETN RST" *) (* x_interface_parameter = "XIL_INTERFACENAME S_AXI_ARESETN, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input s_axi_aresetn;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 9, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN design1_direct_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [8:0]s_axi_awaddr;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 9, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN design1_direct_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [8:0]s_axi_awaddr;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI AWVALID" *) input s_axi_awvalid;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI AWREADY" *) output s_axi_awready;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI WDATA" *) input [31:0]s_axi_wdata;
@@ -92,8 +93,8 @@ module design1_direct_axi_gpio_1_0
   (* C_ALL_INPUTS_2 = "0" *) 
   (* C_ALL_OUTPUTS = "0" *) 
   (* C_ALL_OUTPUTS_2 = "0" *) 
-  (* C_DOUT_DEFAULT = "0" *) 
-  (* C_DOUT_DEFAULT_2 = "0" *) 
+  (* C_DOUT_DEFAULT = "32'b00000000000000000000000000000000" *) 
+  (* C_DOUT_DEFAULT_2 = "32'b00000000000000000000000000000000" *) 
   (* C_FAMILY = "zynq" *) 
   (* C_GPIO2_WIDTH = "32" *) 
   (* C_GPIO_WIDTH = "1" *) 
@@ -101,8 +102,8 @@ module design1_direct_axi_gpio_1_0
   (* C_IS_DUAL = "0" *) 
   (* C_S_AXI_ADDR_WIDTH = "9" *) 
   (* C_S_AXI_DATA_WIDTH = "32" *) 
-  (* C_TRI_DEFAULT = "-1" *) 
-  (* C_TRI_DEFAULT_2 = "-1" *) 
+  (* C_TRI_DEFAULT = "32'b11111111111111111111111111111111" *) 
+  (* C_TRI_DEFAULT_2 = "32'b11111111111111111111111111111111" *) 
   (* downgradeipidentifiedwarnings = "yes" *) 
   (* ip_group = "LOGICORE" *) 
   design1_direct_axi_gpio_1_0_axi_gpio U0
@@ -314,7 +315,7 @@ module design1_direct_axi_gpio_1_0_address_decoder
     s_axi_arready,
     s_axi_arready_0,
     ip2bus_wrack_i_D1,
-    s_axi_wready);
+    s_axi_awready);
   output \GEN_BKEND_CE_REGISTERS[3].ce_out_i_reg ;
   output \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg ;
   output \GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg ;
@@ -335,7 +336,7 @@ module design1_direct_axi_gpio_1_0_address_decoder
   input s_axi_arready;
   input [3:0]s_axi_arready_0;
   input ip2bus_wrack_i_D1;
-  input s_axi_wready;
+  input s_axi_awready;
 
   wire Bus_RNW_reg;
   wire Bus_RNW_reg_i_1_n_0;
@@ -364,8 +365,8 @@ module design1_direct_axi_gpio_1_0_address_decoder
   wire s_axi_aresetn;
   wire s_axi_arready;
   wire [3:0]s_axi_arready_0;
+  wire s_axi_awready;
   wire [1:0]s_axi_wdata;
-  wire s_axi_wready;
 
   LUT3 #(
     .INIT(8'hB8)) 
@@ -487,7 +488,7 @@ module design1_direct_axi_gpio_1_0_address_decoder
     .INIT(64'hAAAAAAAAAAAEAAAA)) 
     s_axi_wready_INST_0
        (.I0(ip2bus_wrack_i_D1),
-        .I1(s_axi_wready),
+        .I1(s_axi_awready),
         .I2(s_axi_arready_0[2]),
         .I3(s_axi_arready_0[1]),
         .I4(s_axi_arready_0[3]),
@@ -496,10 +497,10 @@ module design1_direct_axi_gpio_1_0_address_decoder
 endmodule
 
 (* C_ALL_INPUTS = "1" *) (* C_ALL_INPUTS_2 = "0" *) (* C_ALL_OUTPUTS = "0" *) 
-(* C_ALL_OUTPUTS_2 = "0" *) (* C_DOUT_DEFAULT = "0" *) (* C_DOUT_DEFAULT_2 = "0" *) 
+(* C_ALL_OUTPUTS_2 = "0" *) (* C_DOUT_DEFAULT = "32'b00000000000000000000000000000000" *) (* C_DOUT_DEFAULT_2 = "32'b00000000000000000000000000000000" *) 
 (* C_FAMILY = "zynq" *) (* C_GPIO2_WIDTH = "32" *) (* C_GPIO_WIDTH = "1" *) 
 (* C_INTERRUPT_PRESENT = "0" *) (* C_IS_DUAL = "0" *) (* C_S_AXI_ADDR_WIDTH = "9" *) 
-(* C_S_AXI_DATA_WIDTH = "32" *) (* C_TRI_DEFAULT = "-1" *) (* C_TRI_DEFAULT_2 = "-1" *) 
+(* C_S_AXI_DATA_WIDTH = "32" *) (* C_TRI_DEFAULT = "32'b11111111111111111111111111111111" *) (* C_TRI_DEFAULT_2 = "32'b11111111111111111111111111111111" *) 
 (* ORIG_REF_NAME = "axi_gpio" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_group = "LOGICORE" *) 
 module design1_direct_axi_gpio_1_0_axi_gpio
    (s_axi_aclk,
@@ -580,6 +581,7 @@ module design1_direct_axi_gpio_1_0_axi_gpio
   wire s_axi_arready;
   wire s_axi_arvalid;
   wire [8:0]s_axi_awaddr;
+  wire s_axi_awready;
   wire s_axi_awvalid;
   wire s_axi_bready;
   wire s_axi_bvalid;
@@ -587,7 +589,6 @@ module design1_direct_axi_gpio_1_0_axi_gpio
   wire s_axi_rready;
   wire s_axi_rvalid;
   wire [31:0]s_axi_wdata;
-  wire s_axi_wready;
   wire s_axi_wvalid;
 
   assign gpio2_io_o[31] = \<const0> ;
@@ -657,7 +658,6 @@ module design1_direct_axi_gpio_1_0_axi_gpio
   assign gpio_io_o[0] = \<const0> ;
   assign gpio_io_t[0] = \<const0> ;
   assign ip2intc_irpt = \<const0> ;
-  assign s_axi_awready = s_axi_wready;
   assign s_axi_bresp[1] = \<const0> ;
   assign s_axi_bresp[0] = \<const0> ;
   assign s_axi_rdata[31] = \^s_axi_rdata [30];
@@ -694,6 +694,7 @@ module design1_direct_axi_gpio_1_0_axi_gpio
   assign s_axi_rdata[0] = \^s_axi_rdata [0];
   assign s_axi_rresp[1] = \<const0> ;
   assign s_axi_rresp[0] = \<const0> ;
+  assign s_axi_wready = s_axi_awready;
   design1_direct_axi_gpio_1_0_axi_lite_ipif AXI_LITE_IPIF_I
        (.Bus_RNW_reg(\I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg ),
         .\GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg (\I_SLAVE_ATTACHMENT/I_DECODER/GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg ),
@@ -708,7 +709,7 @@ module design1_direct_axi_gpio_1_0_axi_gpio
         .ip2bus_rdack_i_D1(ip2bus_rdack_i_D1),
         .ip2bus_rdack_i_D1_reg(s_axi_arready),
         .ip2bus_wrack_i_D1(ip2bus_wrack_i_D1),
-        .ip2bus_wrack_i_D1_reg(s_axi_wready),
+        .ip2bus_wrack_i_D1_reg(s_axi_awready),
         .rst(\I_SLAVE_ATTACHMENT/rst ),
         .s_axi_aclk(s_axi_aclk),
         .s_axi_araddr({s_axi_araddr[8],s_axi_araddr[3:2]}),
@@ -901,48 +902,52 @@ module design1_direct_axi_gpio_1_0_cdc_sync
   input [0:0]gpio_io_i;
   input s_axi_aclk;
 
+  wire \GENERATE_LEVEL_P_S_CDC.MULTI_BIT.s_level_out_bus_d1_cdc_to ;
+  wire \GENERATE_LEVEL_P_S_CDC.MULTI_BIT.s_level_out_bus_d2 ;
+  wire \GENERATE_LEVEL_P_S_CDC.MULTI_BIT.s_level_out_bus_d3 ;
   wire [0:0]gpio_io_i;
   wire s_axi_aclk;
-  wire s_level_out_bus_d1_cdc_to;
-  wire s_level_out_bus_d2;
-  wire s_level_out_bus_d3;
   wire [0:0]scndry_vect_out;
 
   (* ASYNC_REG *) 
   (* XILINX_LEGACY_PRIM = "FDR" *) 
+  (* XILINX_TRANSFORM_PINMAP = "VCC:CE" *) 
   (* box_type = "PRIMITIVE" *) 
   FDRE #(
     .INIT(1'b0)) 
     \GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2 
        (.C(s_axi_aclk),
         .CE(1'b1),
-        .D(s_level_out_bus_d1_cdc_to),
-        .Q(s_level_out_bus_d2),
+        .D(\GENERATE_LEVEL_P_S_CDC.MULTI_BIT.s_level_out_bus_d1_cdc_to ),
+        .Q(\GENERATE_LEVEL_P_S_CDC.MULTI_BIT.s_level_out_bus_d2 ),
         .R(1'b0));
   (* ASYNC_REG *) 
   (* XILINX_LEGACY_PRIM = "FDR" *) 
+  (* XILINX_TRANSFORM_PINMAP = "VCC:CE" *) 
   (* box_type = "PRIMITIVE" *) 
   FDRE #(
     .INIT(1'b0)) 
     \GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3 
        (.C(s_axi_aclk),
         .CE(1'b1),
-        .D(s_level_out_bus_d2),
-        .Q(s_level_out_bus_d3),
+        .D(\GENERATE_LEVEL_P_S_CDC.MULTI_BIT.s_level_out_bus_d2 ),
+        .Q(\GENERATE_LEVEL_P_S_CDC.MULTI_BIT.s_level_out_bus_d3 ),
         .R(1'b0));
   (* ASYNC_REG *) 
   (* XILINX_LEGACY_PRIM = "FDR" *) 
+  (* XILINX_TRANSFORM_PINMAP = "VCC:CE" *) 
   (* box_type = "PRIMITIVE" *) 
   FDRE #(
     .INIT(1'b0)) 
     \GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4 
        (.C(s_axi_aclk),
         .CE(1'b1),
-        .D(s_level_out_bus_d3),
+        .D(\GENERATE_LEVEL_P_S_CDC.MULTI_BIT.s_level_out_bus_d3 ),
         .Q(scndry_vect_out),
         .R(1'b0));
   (* ASYNC_REG *) 
   (* XILINX_LEGACY_PRIM = "FDR" *) 
+  (* XILINX_TRANSFORM_PINMAP = "VCC:CE" *) 
   (* box_type = "PRIMITIVE" *) 
   FDRE #(
     .INIT(1'b0)) 
@@ -950,7 +955,7 @@ module design1_direct_axi_gpio_1_0_cdc_sync
        (.C(s_axi_aclk),
         .CE(1'b1),
         .D(gpio_io_i),
-        .Q(s_level_out_bus_d1_cdc_to),
+        .Q(\GENERATE_LEVEL_P_S_CDC.MULTI_BIT.s_level_out_bus_d1_cdc_to ),
         .R(1'b0));
 endmodule
 
@@ -1045,7 +1050,6 @@ module design1_direct_axi_gpio_1_0_slave_attachment
   wire is_write_i_2_n_0;
   wire is_write_reg_n_0;
   wire p_0_in;
-  wire [1:0]p_0_out;
   wire [8:2]p_1_in;
   wire p_5_in;
   wire [3:0]plusOp;
@@ -1071,8 +1075,11 @@ module design1_direct_axi_gpio_1_0_slave_attachment
   wire s_axi_wvalid;
   wire start2;
   wire start2_i_1_n_0;
-  wire [1:0]state;
   wire state1__2;
+  wire \state[0]_i_1_n_0 ;
+  wire \state[1]_i_1_n_0 ;
+  wire \state_reg_n_0_[0] ;
+  wire \state_reg_n_0_[1] ;
 
   LUT6 #(
     .INIT(64'hFFFF150015001500)) 
@@ -1180,8 +1187,8 @@ module design1_direct_axi_gpio_1_0_slave_attachment
   LUT2 #(
     .INIT(4'h9)) 
     \INCLUDE_DPHASE_TIMER.dpto_cnt[3]_i_1 
-       (.I0(state[0]),
-        .I1(state[1]),
+       (.I0(\state_reg_n_0_[0] ),
+        .I1(\state_reg_n_0_[1] ),
         .O(clear));
   (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT4 #(
@@ -1236,8 +1243,8 @@ module design1_direct_axi_gpio_1_0_slave_attachment
         .s_axi_aresetn(s_axi_aresetn),
         .s_axi_arready(is_read_reg_n_0),
         .s_axi_arready_0(\INCLUDE_DPHASE_TIMER.dpto_cnt_reg ),
-        .s_axi_wdata(s_axi_wdata),
-        .s_axi_wready(is_write_reg_n_0));
+        .s_axi_awready(is_write_reg_n_0),
+        .s_axi_wdata(s_axi_wdata));
   LUT3 #(
     .INIT(8'hAC)) 
     \bus2ip_addr_i[2]_i_1 
@@ -1259,8 +1266,8 @@ module design1_direct_axi_gpio_1_0_slave_attachment
        (.I0(s_axi_arvalid),
         .I1(s_axi_awvalid),
         .I2(s_axi_wvalid),
-        .I3(state[1]),
-        .I4(state[0]),
+        .I3(\state_reg_n_0_[1] ),
+        .I4(\state_reg_n_0_[0] ),
         .O(\bus2ip_addr_i[8]_i_1_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair5" *) 
   LUT3 #(
@@ -1350,8 +1357,8 @@ module design1_direct_axi_gpio_1_0_slave_attachment
     .INIT(32'h08FF0808)) 
     s_axi_bvalid_i_i_1
        (.I0(ip2bus_wrack_i_D1_reg),
-        .I1(state[1]),
-        .I2(state[0]),
+        .I1(\state_reg_n_0_[1] ),
+        .I2(\state_reg_n_0_[0] ),
         .I3(s_axi_bready),
         .I4(s_axi_bvalid_i_reg_0),
         .O(s_axi_bvalid_i_i_1_n_0));
@@ -1399,8 +1406,8 @@ module design1_direct_axi_gpio_1_0_slave_attachment
     .INIT(32'h08FF0808)) 
     s_axi_rvalid_i_i_1
        (.I0(ip2bus_rdack_i_D1_reg),
-        .I1(state[0]),
-        .I2(state[1]),
+        .I1(\state_reg_n_0_[0] ),
+        .I2(\state_reg_n_0_[1] ),
         .I3(s_axi_rready),
         .I4(s_axi_rvalid_i_reg_0),
         .O(s_axi_rvalid_i_i_1_n_0));
@@ -1419,8 +1426,8 @@ module design1_direct_axi_gpio_1_0_slave_attachment
        (.I0(s_axi_awvalid),
         .I1(s_axi_wvalid),
         .I2(s_axi_arvalid),
-        .I3(state[1]),
-        .I4(state[0]),
+        .I3(\state_reg_n_0_[1] ),
+        .I4(\state_reg_n_0_[0] ),
         .O(start2_i_1_n_0));
   FDRE start2_reg
        (.C(s_axi_aclk),
@@ -1429,24 +1436,24 @@ module design1_direct_axi_gpio_1_0_slave_attachment
         .Q(start2),
         .R(SS));
   LUT5 #(
-    .INIT(32'h77FC44FC)) 
+    .INIT(32'h0FCAFFCA)) 
     \state[0]_i_1 
-       (.I0(state1__2),
-        .I1(state[0]),
-        .I2(s_axi_arvalid),
-        .I3(state[1]),
-        .I4(ip2bus_wrack_i_D1_reg),
-        .O(p_0_out[0]));
+       (.I0(s_axi_arvalid),
+        .I1(ip2bus_wrack_i_D1_reg),
+        .I2(\state_reg_n_0_[1] ),
+        .I3(\state_reg_n_0_[0] ),
+        .I4(state1__2),
+        .O(\state[0]_i_1_n_0 ));
   LUT6 #(
     .INIT(64'h55FFFF0C5500FF0C)) 
     \state[1]_i_1 
        (.I0(state1__2),
         .I1(p_5_in),
         .I2(s_axi_arvalid),
-        .I3(state[1]),
-        .I4(state[0]),
+        .I3(\state_reg_n_0_[1] ),
+        .I4(\state_reg_n_0_[0] ),
         .I5(ip2bus_rdack_i_D1_reg),
-        .O(p_0_out[1]));
+        .O(\state[1]_i_1_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT2 #(
     .INIT(4'h8)) 
@@ -1454,17 +1461,21 @@ module design1_direct_axi_gpio_1_0_slave_attachment
        (.I0(s_axi_awvalid),
         .I1(s_axi_wvalid),
         .O(p_5_in));
-  FDRE \state_reg[0] 
+  FDRE #(
+    .INIT(1'b0)) 
+    \state_reg[0] 
        (.C(s_axi_aclk),
         .CE(1'b1),
-        .D(p_0_out[0]),
-        .Q(state[0]),
+        .D(\state[0]_i_1_n_0 ),
+        .Q(\state_reg_n_0_[0] ),
         .R(SS));
-  FDRE \state_reg[1] 
+  FDRE #(
+    .INIT(1'b0)) 
+    \state_reg[1] 
        (.C(s_axi_aclk),
         .CE(1'b1),
-        .D(p_0_out[1]),
-        .Q(state[1]),
+        .D(\state[1]_i_1_n_0 ),
+        .Q(\state_reg_n_0_[1] ),
         .R(SS));
 endmodule
 `ifndef GLBL

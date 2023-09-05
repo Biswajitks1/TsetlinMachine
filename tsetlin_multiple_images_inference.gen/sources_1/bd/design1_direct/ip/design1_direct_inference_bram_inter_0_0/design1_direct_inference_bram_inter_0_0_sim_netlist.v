@@ -1,10 +1,11 @@
-// Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+// Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Wed Apr 19 10:45:06 2023
-// Host        : LAPTOP-UPJ8ANHP running 64-bit major release  (build 9200)
+// Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+// Date        : Tue Sep  5 13:10:00 2023
+// Host        : LAPTOP-LQMFOCT1 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_inference_bram_inter_0_0/design1_direct_inference_bram_inter_0_0_sim_netlist.v
+//               e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_inference_bram_inter_0_0/design1_direct_inference_bram_inter_0_0_sim_netlist.v
 // Design      : design1_direct_inference_bram_inter_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -13,7 +14,7 @@
 `timescale 1 ps / 1 ps
 
 (* CHECK_LICENSE_TYPE = "design1_direct_inference_bram_inter_0_0,inference_bram_interface,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "module_ref" *) 
-(* X_CORE_INFO = "inference_bram_interface,Vivado 2020.2" *) 
+(* X_CORE_INFO = "inference_bram_interface,Vivado 2023.1" *) 
 (* NotValidForBitStream *)
 module design1_direct_inference_bram_inter_0_0
    (clock,
@@ -29,7 +30,7 @@ module design1_direct_inference_bram_inter_0_0
     predicted_class,
     result_ready,
     led);
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clock CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clock, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design1_direct_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clock;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clock CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clock, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design1_direct_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clock;
   input start;
   input start_compute;
   output [31:0]addrb;

@@ -1,12 +1,14 @@
 #-----------------------------------------------------------
-# Vivado v2020.2 (64-bit)
-# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
-# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Apr  3 11:10:50 2023
-# Process ID: 28976
-# Current directory: D:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.runs/design1_direct_axi_gpio_1_0_synth_1
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Sep  5 13:07:40 2023
+# Process ID: 6328
+# Current directory: E:/TsetlinMachine/tsetlin_multiple_images_inference.runs/design1_direct_axi_gpio_1_0_synth_1
 # Command line: vivado.exe -log design1_direct_axi_gpio_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design1_direct_axi_gpio_1_0.tcl
-# Log file: D:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.runs/design1_direct_axi_gpio_1_0_synth_1/design1_direct_axi_gpio_1_0.vds
-# Journal file: D:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.runs/design1_direct_axi_gpio_1_0_synth_1\vivado.jou
+# Log file: E:/TsetlinMachine/tsetlin_multiple_images_inference.runs/design1_direct_axi_gpio_1_0_synth_1/design1_direct_axi_gpio_1_0.vds
+# Journal file: E:/TsetlinMachine/tsetlin_multiple_images_inference.runs/design1_direct_axi_gpio_1_0_synth_1\vivado.jou
+# Running On: LAPTOP-LQMFOCT1, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 4, Host memory: 16945 MB
 #-----------------------------------------------------------
 source design1_direct_axi_gpio_1_0.tcl -notrace

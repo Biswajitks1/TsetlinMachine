@@ -52,7 +52,6 @@
 //
 //   Vivado Simulator (XSim)
 //   Cadence Xcelium Simulator
-//   Aldec Riviera-PRO Simulator
 //
 //------------------------------------------------------------------------------------
 `ifdef XILINX_SIMULATOR
@@ -77,10 +76,4 @@ module bd_f811_one_0 (dout)
 endmodule
 `endif
 
-`ifdef RIVIERA
-(* SC_MODULE_EXPORT *)
-module bd_f811_one_0 (dout)
-  output wire [0 : 0 ] dout;
-endmodule
-`endif
 

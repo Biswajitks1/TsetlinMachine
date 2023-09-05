@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Apr 19 10:27:11 2023" VIVADOVERSION="2020.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Sep  5 13:07:23 2023" VIVADOVERSION="2023.1">
 
-  <SYSTEMINFO ARCH="zynq" BOARD="em.avnet.com:zed:part0:1.4" DEVICE="7z020" NAME="bd_f811" PACKAGE="clg484" SPEEDGRADE="-1"/>
+  <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="bd_f811" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
     <PORT CLKFREQUENCY="100000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
@@ -642,7 +642,7 @@
       <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="8"/>
       <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="8"/>
       <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="16"/>
-      <PARAMETER NAME="PHASE" VALUE="0.000"/>
+      <PARAMETER NAME="PHASE" VALUE="0.0"/>
       <PARAMETER NAME="CLK_DOMAIN" VALUE="design1_direct_processing_system7_0_0_FCLK_CLK0"/>
       <PARAMETER NAME="NUM_READ_THREADS" VALUE="4"/>
       <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="4"/>
@@ -717,7 +717,7 @@
       <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="8"/>
       <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="8"/>
       <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="16"/>
-      <PARAMETER NAME="PHASE" VALUE="0.000"/>
+      <PARAMETER NAME="PHASE" VALUE="0.0"/>
       <PARAMETER NAME="CLK_DOMAIN" VALUE="design1_direct_processing_system7_0_0_FCLK_CLK0"/>
       <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
       <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
@@ -785,7 +785,7 @@
       <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="8"/>
       <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="8"/>
       <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
-      <PARAMETER NAME="PHASE" VALUE="0.000"/>
+      <PARAMETER NAME="PHASE" VALUE="0.0"/>
       <PARAMETER NAME="CLK_DOMAIN" VALUE="design1_direct_processing_system7_0_0_FCLK_CLK0"/>
       <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
       <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
@@ -839,7 +839,7 @@
       <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="8"/>
       <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="8"/>
       <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
-      <PARAMETER NAME="PHASE" VALUE="0.000"/>
+      <PARAMETER NAME="PHASE" VALUE="0.0"/>
       <PARAMETER NAME="CLK_DOMAIN" VALUE="design1_direct_processing_system7_0_0_FCLK_CLK0"/>
       <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
       <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
@@ -982,7 +982,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="11" FULLNAME="/m00_exit_pipeline/m00_exit" HWVERSION="1.0" INSTANCE="m00_exit_pipeline_m00_exit" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_exit" VLNV="xilinx.com:ip:sc_exit:1.0">
+    <MODULE COREREVISION="13" FULLNAME="/m00_exit_pipeline/m00_exit" HWVERSION="1.0" INSTANCE="m00_exit_pipeline_m00_exit" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_exit" VLNV="xilinx.com:ip:sc_exit:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -1017,6 +1017,8 @@
         <PARAMETER NAME="C_NUM_WRITE_OUTSTANDING" VALUE="8"/>
         <PARAMETER NAME="C_READ_ACCEPTANCE" VALUE="32"/>
         <PARAMETER NAME="C_WRITE_ACCEPTANCE" VALUE="32"/>
+        <PARAMETER NAME="C_NUM_WRITE_THREADS" VALUE="1"/>
+        <PARAMETER NAME="C_NUM_READ_THREADS" VALUE="1"/>
         <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
         <PARAMETER NAME="ENABLE_PIPELINING" VALUE="0x1"/>
         <PARAMETER NAME="IS_CASCADED" VALUE="0"/>
@@ -1035,6 +1037,8 @@
         <PARAMETER NAME="M_BUSER_WIDTH" VALUE="0"/>
         <PARAMETER NAME="S_ID_WIDTH" VALUE="3"/>
         <PARAMETER NAME="M_ID_WIDTH" VALUE="0"/>
+        <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+        <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
         <PARAMETER NAME="M_MAX_BURST_LENGTH" VALUE="16"/>
         <PARAMETER NAME="ADDR_WIDTH" VALUE="19"/>
         <PARAMETER NAME="M_PROTOCOL" VALUE="AXI4"/>
@@ -1699,7 +1703,7 @@
           <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="2"/>
           <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="2"/>
           <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="256"/>
-          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="design1_direct_processing_system7_0_0_FCLK_CLK0"/>
           <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
           <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
@@ -1772,7 +1776,7 @@
           <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="8"/>
           <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="8"/>
           <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="16"/>
-          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="design1_direct_processing_system7_0_0_FCLK_CLK0"/>
           <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
           <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
@@ -1817,7 +1821,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="12" FULLNAME="/m00_nodes/m00_ar_node" HWVERSION="1.0" INSTANCE="m00_nodes_m00_ar_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
+    <MODULE COREREVISION="14" FULLNAME="/m00_nodes/m00_ar_node" HWVERSION="1.0" INSTANCE="m00_nodes_m00_ar_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -1835,7 +1839,7 @@
         <PARAMETER NAME="C_CHANNEL" VALUE="2"/>
         <PARAMETER NAME="C_PAYLD_WIDTH" VALUE="144"/>
         <PARAMETER NAME="C_S_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
-        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x0000000400000004"/>
+        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
         <PARAMETER NAME="C_PRIORITY_ARB_ARRAY" VALUE="0b0"/>
         <PARAMETER NAME="C_USER_BITS_PER_BYTE" VALUE="0"/>
         <PARAMETER NAME="C_ARBITER_MODE" VALUE="1"/>
@@ -2020,7 +2024,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="12" FULLNAME="/m00_nodes/m00_aw_node" HWVERSION="1.0" INSTANCE="m00_nodes_m00_aw_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
+    <MODULE COREREVISION="14" FULLNAME="/m00_nodes/m00_aw_node" HWVERSION="1.0" INSTANCE="m00_nodes_m00_aw_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -2038,7 +2042,7 @@
         <PARAMETER NAME="C_CHANNEL" VALUE="3"/>
         <PARAMETER NAME="C_PAYLD_WIDTH" VALUE="144"/>
         <PARAMETER NAME="C_S_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
-        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x0000000400000004"/>
+        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
         <PARAMETER NAME="C_PRIORITY_ARB_ARRAY" VALUE="0b0"/>
         <PARAMETER NAME="C_USER_BITS_PER_BYTE" VALUE="0"/>
         <PARAMETER NAME="C_ARBITER_MODE" VALUE="1"/>
@@ -2223,7 +2227,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="12" FULLNAME="/m00_nodes/m00_b_node" HWVERSION="1.0" INSTANCE="m00_nodes_m00_b_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
+    <MODULE COREREVISION="14" FULLNAME="/m00_nodes/m00_b_node" HWVERSION="1.0" INSTANCE="m00_nodes_m00_b_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -2241,7 +2245,7 @@
         <PARAMETER NAME="C_CHANNEL" VALUE="4"/>
         <PARAMETER NAME="C_PAYLD_WIDTH" VALUE="7"/>
         <PARAMETER NAME="C_S_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
-        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x0000000400000004"/>
+        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
         <PARAMETER NAME="C_PRIORITY_ARB_ARRAY" VALUE="0b0"/>
         <PARAMETER NAME="C_USER_BITS_PER_BYTE" VALUE="0"/>
         <PARAMETER NAME="C_ARBITER_MODE" VALUE="1"/>
@@ -2426,7 +2430,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="12" FULLNAME="/m00_nodes/m00_r_node" HWVERSION="1.0" INSTANCE="m00_nodes_m00_r_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
+    <MODULE COREREVISION="14" FULLNAME="/m00_nodes/m00_r_node" HWVERSION="1.0" INSTANCE="m00_nodes_m00_r_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -2444,7 +2448,7 @@
         <PARAMETER NAME="C_CHANNEL" VALUE="0"/>
         <PARAMETER NAME="C_PAYLD_WIDTH" VALUE="53"/>
         <PARAMETER NAME="C_S_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
-        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x0000000400000004"/>
+        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
         <PARAMETER NAME="C_PRIORITY_ARB_ARRAY" VALUE="0b0"/>
         <PARAMETER NAME="C_USER_BITS_PER_BYTE" VALUE="0"/>
         <PARAMETER NAME="C_ARBITER_MODE" VALUE="1"/>
@@ -2629,7 +2633,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="12" FULLNAME="/m00_nodes/m00_w_node" HWVERSION="1.0" INSTANCE="m00_nodes_m00_w_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
+    <MODULE COREREVISION="14" FULLNAME="/m00_nodes/m00_w_node" HWVERSION="1.0" INSTANCE="m00_nodes_m00_w_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -2647,7 +2651,7 @@
         <PARAMETER NAME="C_CHANNEL" VALUE="1"/>
         <PARAMETER NAME="C_PAYLD_WIDTH" VALUE="54"/>
         <PARAMETER NAME="C_S_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
-        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x0000000400000004"/>
+        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
         <PARAMETER NAME="C_PRIORITY_ARB_ARRAY" VALUE="0b0"/>
         <PARAMETER NAME="C_USER_BITS_PER_BYTE" VALUE="0"/>
         <PARAMETER NAME="C_ARBITER_MODE" VALUE="1"/>
@@ -2832,7 +2836,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="7" FULLNAME="/m00_sc2axi" HWVERSION="1.0" INSTANCE="m00_sc2axi" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_sc2axi" VLNV="xilinx.com:ip:sc_sc2axi:1.0">
+    <MODULE COREREVISION="8" FULLNAME="/m00_sc2axi" HWVERSION="1.0" INSTANCE="m00_sc2axi" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_sc2axi" VLNV="xilinx.com:ip:sc_sc2axi:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -3269,7 +3273,7 @@
           <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="2"/>
           <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="2"/>
           <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="256"/>
-          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="design1_direct_processing_system7_0_0_FCLK_CLK0"/>
           <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
           <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
@@ -3319,7 +3323,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="11" FULLNAME="/m01_exit_pipeline/m01_exit" HWVERSION="1.0" INSTANCE="m01_exit_pipeline_m01_exit" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_exit" VLNV="xilinx.com:ip:sc_exit:1.0">
+    <MODULE COREREVISION="13" FULLNAME="/m01_exit_pipeline/m01_exit" HWVERSION="1.0" INSTANCE="m01_exit_pipeline_m01_exit" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_exit" VLNV="xilinx.com:ip:sc_exit:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -3354,6 +3358,8 @@
         <PARAMETER NAME="C_NUM_WRITE_OUTSTANDING" VALUE="8"/>
         <PARAMETER NAME="C_READ_ACCEPTANCE" VALUE="32"/>
         <PARAMETER NAME="C_WRITE_ACCEPTANCE" VALUE="32"/>
+        <PARAMETER NAME="C_NUM_WRITE_THREADS" VALUE="1"/>
+        <PARAMETER NAME="C_NUM_READ_THREADS" VALUE="1"/>
         <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
         <PARAMETER NAME="ENABLE_PIPELINING" VALUE="0x1"/>
         <PARAMETER NAME="IS_CASCADED" VALUE="0"/>
@@ -3372,6 +3378,8 @@
         <PARAMETER NAME="M_BUSER_WIDTH" VALUE="0"/>
         <PARAMETER NAME="S_ID_WIDTH" VALUE="3"/>
         <PARAMETER NAME="M_ID_WIDTH" VALUE="0"/>
+        <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+        <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
         <PARAMETER NAME="M_MAX_BURST_LENGTH" VALUE="1"/>
         <PARAMETER NAME="ADDR_WIDTH" VALUE="9"/>
         <PARAMETER NAME="M_PROTOCOL" VALUE="AXI4LITE"/>
@@ -3966,7 +3974,7 @@
           <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="2"/>
           <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="2"/>
           <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="256"/>
-          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="design1_direct_processing_system7_0_0_FCLK_CLK0"/>
           <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
           <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
@@ -4039,7 +4047,7 @@
           <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="8"/>
           <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="8"/>
           <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
-          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="design1_direct_processing_system7_0_0_FCLK_CLK0"/>
           <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
           <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
@@ -4070,7 +4078,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="12" FULLNAME="/m01_nodes/m01_ar_node" HWVERSION="1.0" INSTANCE="m01_nodes_m01_ar_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
+    <MODULE COREREVISION="14" FULLNAME="/m01_nodes/m01_ar_node" HWVERSION="1.0" INSTANCE="m01_nodes_m01_ar_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -4088,7 +4096,7 @@
         <PARAMETER NAME="C_CHANNEL" VALUE="2"/>
         <PARAMETER NAME="C_PAYLD_WIDTH" VALUE="144"/>
         <PARAMETER NAME="C_S_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
-        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x0000000400000004"/>
+        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
         <PARAMETER NAME="C_PRIORITY_ARB_ARRAY" VALUE="0b0"/>
         <PARAMETER NAME="C_USER_BITS_PER_BYTE" VALUE="0"/>
         <PARAMETER NAME="C_ARBITER_MODE" VALUE="1"/>
@@ -4273,7 +4281,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="12" FULLNAME="/m01_nodes/m01_aw_node" HWVERSION="1.0" INSTANCE="m01_nodes_m01_aw_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
+    <MODULE COREREVISION="14" FULLNAME="/m01_nodes/m01_aw_node" HWVERSION="1.0" INSTANCE="m01_nodes_m01_aw_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -4291,7 +4299,7 @@
         <PARAMETER NAME="C_CHANNEL" VALUE="3"/>
         <PARAMETER NAME="C_PAYLD_WIDTH" VALUE="144"/>
         <PARAMETER NAME="C_S_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
-        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x0000000400000004"/>
+        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
         <PARAMETER NAME="C_PRIORITY_ARB_ARRAY" VALUE="0b0"/>
         <PARAMETER NAME="C_USER_BITS_PER_BYTE" VALUE="0"/>
         <PARAMETER NAME="C_ARBITER_MODE" VALUE="1"/>
@@ -4476,7 +4484,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="12" FULLNAME="/m01_nodes/m01_b_node" HWVERSION="1.0" INSTANCE="m01_nodes_m01_b_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
+    <MODULE COREREVISION="14" FULLNAME="/m01_nodes/m01_b_node" HWVERSION="1.0" INSTANCE="m01_nodes_m01_b_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -4494,7 +4502,7 @@
         <PARAMETER NAME="C_CHANNEL" VALUE="4"/>
         <PARAMETER NAME="C_PAYLD_WIDTH" VALUE="7"/>
         <PARAMETER NAME="C_S_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
-        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x0000000400000004"/>
+        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
         <PARAMETER NAME="C_PRIORITY_ARB_ARRAY" VALUE="0b0"/>
         <PARAMETER NAME="C_USER_BITS_PER_BYTE" VALUE="0"/>
         <PARAMETER NAME="C_ARBITER_MODE" VALUE="1"/>
@@ -4679,7 +4687,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="12" FULLNAME="/m01_nodes/m01_r_node" HWVERSION="1.0" INSTANCE="m01_nodes_m01_r_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
+    <MODULE COREREVISION="14" FULLNAME="/m01_nodes/m01_r_node" HWVERSION="1.0" INSTANCE="m01_nodes_m01_r_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -4697,7 +4705,7 @@
         <PARAMETER NAME="C_CHANNEL" VALUE="0"/>
         <PARAMETER NAME="C_PAYLD_WIDTH" VALUE="53"/>
         <PARAMETER NAME="C_S_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
-        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x0000000400000004"/>
+        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
         <PARAMETER NAME="C_PRIORITY_ARB_ARRAY" VALUE="0b0"/>
         <PARAMETER NAME="C_USER_BITS_PER_BYTE" VALUE="0"/>
         <PARAMETER NAME="C_ARBITER_MODE" VALUE="1"/>
@@ -4882,7 +4890,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="12" FULLNAME="/m01_nodes/m01_w_node" HWVERSION="1.0" INSTANCE="m01_nodes_m01_w_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
+    <MODULE COREREVISION="14" FULLNAME="/m01_nodes/m01_w_node" HWVERSION="1.0" INSTANCE="m01_nodes_m01_w_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -4900,7 +4908,7 @@
         <PARAMETER NAME="C_CHANNEL" VALUE="1"/>
         <PARAMETER NAME="C_PAYLD_WIDTH" VALUE="54"/>
         <PARAMETER NAME="C_S_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
-        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x0000000400000004"/>
+        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
         <PARAMETER NAME="C_PRIORITY_ARB_ARRAY" VALUE="0b0"/>
         <PARAMETER NAME="C_USER_BITS_PER_BYTE" VALUE="0"/>
         <PARAMETER NAME="C_ARBITER_MODE" VALUE="1"/>
@@ -5085,7 +5093,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="7" FULLNAME="/m01_sc2axi" HWVERSION="1.0" INSTANCE="m01_sc2axi" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_sc2axi" VLNV="xilinx.com:ip:sc_sc2axi:1.0">
+    <MODULE COREREVISION="8" FULLNAME="/m01_sc2axi" HWVERSION="1.0" INSTANCE="m01_sc2axi" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_sc2axi" VLNV="xilinx.com:ip:sc_sc2axi:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -5522,7 +5530,7 @@
           <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="2"/>
           <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="2"/>
           <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="256"/>
-          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="design1_direct_processing_system7_0_0_FCLK_CLK0"/>
           <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
           <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
@@ -5572,7 +5580,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="11" FULLNAME="/m02_exit_pipeline/m02_exit" HWVERSION="1.0" INSTANCE="m02_exit_pipeline_m02_exit" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_exit" VLNV="xilinx.com:ip:sc_exit:1.0">
+    <MODULE COREREVISION="13" FULLNAME="/m02_exit_pipeline/m02_exit" HWVERSION="1.0" INSTANCE="m02_exit_pipeline_m02_exit" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_exit" VLNV="xilinx.com:ip:sc_exit:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -5607,6 +5615,8 @@
         <PARAMETER NAME="C_NUM_WRITE_OUTSTANDING" VALUE="8"/>
         <PARAMETER NAME="C_READ_ACCEPTANCE" VALUE="32"/>
         <PARAMETER NAME="C_WRITE_ACCEPTANCE" VALUE="32"/>
+        <PARAMETER NAME="C_NUM_WRITE_THREADS" VALUE="1"/>
+        <PARAMETER NAME="C_NUM_READ_THREADS" VALUE="1"/>
         <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
         <PARAMETER NAME="ENABLE_PIPELINING" VALUE="0x1"/>
         <PARAMETER NAME="IS_CASCADED" VALUE="0"/>
@@ -5625,6 +5635,8 @@
         <PARAMETER NAME="M_BUSER_WIDTH" VALUE="0"/>
         <PARAMETER NAME="S_ID_WIDTH" VALUE="3"/>
         <PARAMETER NAME="M_ID_WIDTH" VALUE="0"/>
+        <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+        <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
         <PARAMETER NAME="M_MAX_BURST_LENGTH" VALUE="1"/>
         <PARAMETER NAME="ADDR_WIDTH" VALUE="9"/>
         <PARAMETER NAME="M_PROTOCOL" VALUE="AXI4LITE"/>
@@ -6219,7 +6231,7 @@
           <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="2"/>
           <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="2"/>
           <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="256"/>
-          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="design1_direct_processing_system7_0_0_FCLK_CLK0"/>
           <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
           <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
@@ -6292,7 +6304,7 @@
           <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="8"/>
           <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="8"/>
           <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
-          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="design1_direct_processing_system7_0_0_FCLK_CLK0"/>
           <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
           <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
@@ -6323,7 +6335,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="12" FULLNAME="/m02_nodes/m02_ar_node" HWVERSION="1.0" INSTANCE="m02_nodes_m02_ar_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
+    <MODULE COREREVISION="14" FULLNAME="/m02_nodes/m02_ar_node" HWVERSION="1.0" INSTANCE="m02_nodes_m02_ar_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -6341,7 +6353,7 @@
         <PARAMETER NAME="C_CHANNEL" VALUE="2"/>
         <PARAMETER NAME="C_PAYLD_WIDTH" VALUE="144"/>
         <PARAMETER NAME="C_S_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
-        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x0000000400000004"/>
+        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
         <PARAMETER NAME="C_PRIORITY_ARB_ARRAY" VALUE="0b0"/>
         <PARAMETER NAME="C_USER_BITS_PER_BYTE" VALUE="0"/>
         <PARAMETER NAME="C_ARBITER_MODE" VALUE="1"/>
@@ -6526,7 +6538,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="12" FULLNAME="/m02_nodes/m02_aw_node" HWVERSION="1.0" INSTANCE="m02_nodes_m02_aw_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
+    <MODULE COREREVISION="14" FULLNAME="/m02_nodes/m02_aw_node" HWVERSION="1.0" INSTANCE="m02_nodes_m02_aw_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -6544,7 +6556,7 @@
         <PARAMETER NAME="C_CHANNEL" VALUE="3"/>
         <PARAMETER NAME="C_PAYLD_WIDTH" VALUE="144"/>
         <PARAMETER NAME="C_S_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
-        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x0000000400000004"/>
+        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
         <PARAMETER NAME="C_PRIORITY_ARB_ARRAY" VALUE="0b0"/>
         <PARAMETER NAME="C_USER_BITS_PER_BYTE" VALUE="0"/>
         <PARAMETER NAME="C_ARBITER_MODE" VALUE="1"/>
@@ -6729,7 +6741,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="12" FULLNAME="/m02_nodes/m02_b_node" HWVERSION="1.0" INSTANCE="m02_nodes_m02_b_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
+    <MODULE COREREVISION="14" FULLNAME="/m02_nodes/m02_b_node" HWVERSION="1.0" INSTANCE="m02_nodes_m02_b_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -6747,7 +6759,7 @@
         <PARAMETER NAME="C_CHANNEL" VALUE="4"/>
         <PARAMETER NAME="C_PAYLD_WIDTH" VALUE="7"/>
         <PARAMETER NAME="C_S_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
-        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x0000000400000004"/>
+        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
         <PARAMETER NAME="C_PRIORITY_ARB_ARRAY" VALUE="0b0"/>
         <PARAMETER NAME="C_USER_BITS_PER_BYTE" VALUE="0"/>
         <PARAMETER NAME="C_ARBITER_MODE" VALUE="1"/>
@@ -6932,7 +6944,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="12" FULLNAME="/m02_nodes/m02_r_node" HWVERSION="1.0" INSTANCE="m02_nodes_m02_r_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
+    <MODULE COREREVISION="14" FULLNAME="/m02_nodes/m02_r_node" HWVERSION="1.0" INSTANCE="m02_nodes_m02_r_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -6950,7 +6962,7 @@
         <PARAMETER NAME="C_CHANNEL" VALUE="0"/>
         <PARAMETER NAME="C_PAYLD_WIDTH" VALUE="53"/>
         <PARAMETER NAME="C_S_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
-        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x0000000400000004"/>
+        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
         <PARAMETER NAME="C_PRIORITY_ARB_ARRAY" VALUE="0b0"/>
         <PARAMETER NAME="C_USER_BITS_PER_BYTE" VALUE="0"/>
         <PARAMETER NAME="C_ARBITER_MODE" VALUE="1"/>
@@ -7135,7 +7147,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="12" FULLNAME="/m02_nodes/m02_w_node" HWVERSION="1.0" INSTANCE="m02_nodes_m02_w_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
+    <MODULE COREREVISION="14" FULLNAME="/m02_nodes/m02_w_node" HWVERSION="1.0" INSTANCE="m02_nodes_m02_w_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -7153,7 +7165,7 @@
         <PARAMETER NAME="C_CHANNEL" VALUE="1"/>
         <PARAMETER NAME="C_PAYLD_WIDTH" VALUE="54"/>
         <PARAMETER NAME="C_S_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
-        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x0000000400000004"/>
+        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
         <PARAMETER NAME="C_PRIORITY_ARB_ARRAY" VALUE="0b0"/>
         <PARAMETER NAME="C_USER_BITS_PER_BYTE" VALUE="0"/>
         <PARAMETER NAME="C_ARBITER_MODE" VALUE="1"/>
@@ -7338,7 +7350,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="7" FULLNAME="/m02_sc2axi" HWVERSION="1.0" INSTANCE="m02_sc2axi" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_sc2axi" VLNV="xilinx.com:ip:sc_sc2axi:1.0">
+    <MODULE COREREVISION="8" FULLNAME="/m02_sc2axi" HWVERSION="1.0" INSTANCE="m02_sc2axi" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_sc2axi" VLNV="xilinx.com:ip:sc_sc2axi:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -7775,7 +7787,7 @@
           <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="2"/>
           <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="2"/>
           <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="256"/>
-          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="design1_direct_processing_system7_0_0_FCLK_CLK0"/>
           <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
           <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
@@ -7825,7 +7837,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="7" FULLNAME="/s00_axi2sc" HWVERSION="1.0" INSTANCE="s00_axi2sc" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_axi2sc" VLNV="xilinx.com:ip:sc_axi2sc:1.0">
+    <MODULE COREREVISION="8" FULLNAME="/s00_axi2sc" HWVERSION="1.0" INSTANCE="s00_axi2sc" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_axi2sc" VLNV="xilinx.com:ip:sc_axi2sc:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -8262,7 +8274,7 @@
           <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="2"/>
           <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="2"/>
           <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="256"/>
-          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="design1_direct_processing_system7_0_0_FCLK_CLK0"/>
           <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
           <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
@@ -8312,7 +8324,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="10" FULLNAME="/s00_entry_pipeline/s00_mmu" HWVERSION="1.0" INSTANCE="s00_entry_pipeline_s00_mmu" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_mmu" VLNV="xilinx.com:ip:sc_mmu:1.0">
+    <MODULE COREREVISION="11" FULLNAME="/s00_entry_pipeline/s00_mmu" HWVERSION="1.0" INSTANCE="s00_entry_pipeline_s00_mmu" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_mmu" VLNV="xilinx.com:ip:sc_mmu:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -10865,7 +10877,7 @@
           <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="8"/>
           <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="8"/>
           <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="16"/>
-          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="design1_direct_processing_system7_0_0_FCLK_CLK0"/>
           <PARAMETER NAME="NUM_READ_THREADS" VALUE="4"/>
           <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="4"/>
@@ -10938,7 +10950,7 @@
           <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="2"/>
           <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="2"/>
           <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="256"/>
-          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="design1_direct_processing_system7_0_0_FCLK_CLK0"/>
           <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
           <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
@@ -10992,7 +11004,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="10" FULLNAME="/s00_entry_pipeline/s00_si_converter" HWVERSION="1.0" INSTANCE="s00_entry_pipeline_s00_si_converter" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_si_converter" VLNV="xilinx.com:ip:sc_si_converter:1.0">
+    <MODULE COREREVISION="11" FULLNAME="/s00_entry_pipeline/s00_si_converter" HWVERSION="1.0" INSTANCE="s00_entry_pipeline_s00_si_converter" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_si_converter" VLNV="xilinx.com:ip:sc_si_converter:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -12780,7 +12792,7 @@
           <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="2"/>
           <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="2"/>
           <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="256"/>
-          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="design1_direct_processing_system7_0_0_FCLK_CLK0"/>
           <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
           <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
@@ -12857,7 +12869,7 @@
           <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="2"/>
           <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="2"/>
           <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="256"/>
-          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="design1_direct_processing_system7_0_0_FCLK_CLK0"/>
           <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
           <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
@@ -13415,7 +13427,7 @@
           <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="2"/>
           <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="2"/>
           <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="256"/>
-          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="design1_direct_processing_system7_0_0_FCLK_CLK0"/>
           <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
           <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
@@ -13492,7 +13504,7 @@
           <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="2"/>
           <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="2"/>
           <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="256"/>
-          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="design1_direct_processing_system7_0_0_FCLK_CLK0"/>
           <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
           <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
@@ -13546,7 +13558,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="12" FULLNAME="/s00_nodes/s00_ar_node" HWVERSION="1.0" INSTANCE="s00_nodes_s00_ar_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
+    <MODULE COREREVISION="14" FULLNAME="/s00_nodes/s00_ar_node" HWVERSION="1.0" INSTANCE="s00_nodes_s00_ar_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -13749,7 +13761,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="12" FULLNAME="/s00_nodes/s00_aw_node" HWVERSION="1.0" INSTANCE="s00_nodes_s00_aw_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
+    <MODULE COREREVISION="14" FULLNAME="/s00_nodes/s00_aw_node" HWVERSION="1.0" INSTANCE="s00_nodes_s00_aw_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -13952,7 +13964,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="12" FULLNAME="/s00_nodes/s00_b_node" HWVERSION="1.0" INSTANCE="s00_nodes_s00_b_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
+    <MODULE COREREVISION="14" FULLNAME="/s00_nodes/s00_b_node" HWVERSION="1.0" INSTANCE="s00_nodes_s00_b_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -13970,7 +13982,7 @@
         <PARAMETER NAME="C_CHANNEL" VALUE="4"/>
         <PARAMETER NAME="C_PAYLD_WIDTH" VALUE="7"/>
         <PARAMETER NAME="C_S_NUM_BYTES_ARRAY" VALUE="0x000000040000000400000004"/>
-        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x0000000400000004"/>
+        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
         <PARAMETER NAME="C_PRIORITY_ARB_ARRAY" VALUE="0b000"/>
         <PARAMETER NAME="C_USER_BITS_PER_BYTE" VALUE="0"/>
         <PARAMETER NAME="C_ARBITER_MODE" VALUE="1"/>
@@ -14155,7 +14167,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="12" FULLNAME="/s00_nodes/s00_r_node" HWVERSION="1.0" INSTANCE="s00_nodes_s00_r_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
+    <MODULE COREREVISION="14" FULLNAME="/s00_nodes/s00_r_node" HWVERSION="1.0" INSTANCE="s00_nodes_s00_r_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -14173,7 +14185,7 @@
         <PARAMETER NAME="C_CHANNEL" VALUE="0"/>
         <PARAMETER NAME="C_PAYLD_WIDTH" VALUE="53"/>
         <PARAMETER NAME="C_S_NUM_BYTES_ARRAY" VALUE="0x000000040000000400000004"/>
-        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x0000000400000004"/>
+        <PARAMETER NAME="C_M_NUM_BYTES_ARRAY" VALUE="0x00000004"/>
         <PARAMETER NAME="C_PRIORITY_ARB_ARRAY" VALUE="0b000"/>
         <PARAMETER NAME="C_USER_BITS_PER_BYTE" VALUE="0"/>
         <PARAMETER NAME="C_ARBITER_MODE" VALUE="1"/>
@@ -14358,7 +14370,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="12" FULLNAME="/s00_nodes/s00_w_node" HWVERSION="1.0" INSTANCE="s00_nodes_s00_w_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
+    <MODULE COREREVISION="14" FULLNAME="/s00_nodes/s00_w_node" HWVERSION="1.0" INSTANCE="s00_nodes_s00_w_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>

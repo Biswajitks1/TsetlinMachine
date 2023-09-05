@@ -1,10 +1,11 @@
--- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
--- Date        : Sat Apr  1 11:53:31 2023
--- Host        : LAPTOP-UPJ8ANHP running 64-bit major release  (build 9200)
+-- Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+-- Date        : Tue Sep  5 13:09:58 2023
+-- Host        : LAPTOP-LQMFOCT1 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_bram_ctrl_0_0/design1_direct_axi_bram_ctrl_0_0_sim_netlist.vhdl
+--               e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_bram_ctrl_0_0/design1_direct_axi_bram_ctrl_0_0_sim_netlist.vhdl
 -- Design      : design1_direct_axi_bram_ctrl_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -141,7 +142,10 @@ begin
       O => \FSM_sequential_arb_sm_cs[1]_i_3_n_0\
     );
 \FSM_sequential_arb_sm_cs_reg[0]\: unisim.vcomponents.FDRE
-     port map (
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => s_axi_aclk,
       CE => '1',
       D => \FSM_sequential_arb_sm_cs[0]_i_1_n_0\,
@@ -149,7 +153,10 @@ begin
       R => ar_active_reg_1
     );
 \FSM_sequential_arb_sm_cs_reg[1]\: unisim.vcomponents.FDRE
-     port map (
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => s_axi_aclk,
       CE => '1',
       D => \FSM_sequential_arb_sm_cs[1]_i_1_n_0\,
@@ -2346,7 +2353,10 @@ begin
       O => \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_5_n_0\
     );
 \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg[0]\: unisim.vcomponents.FDRE
-     port map (
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => s_axi_aclk,
       CE => \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_1_n_0\,
       D => rd_data_sm_ns(0),
@@ -2354,7 +2364,10 @@ begin
       R => \^s_axi_aresetn_0\
     );
 \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg[1]\: unisim.vcomponents.FDRE
-     port map (
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => s_axi_aclk,
       CE => \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_1_n_0\,
       D => \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[1]_i_1_n_0\,
@@ -2362,7 +2375,10 @@ begin
       R => \^s_axi_aresetn_0\
     );
 \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg[2]\: unisim.vcomponents.FDRE
-     port map (
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => s_axi_aclk,
       CE => \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_1_n_0\,
       D => \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[2]_i_1_n_0\,
@@ -2370,7 +2386,10 @@ begin
       R => \^s_axi_aresetn_0\
     );
 \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg[3]\: unisim.vcomponents.FDRE
-     port map (
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => s_axi_aclk,
       CE => \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_1_n_0\,
       D => rd_data_sm_ns(3),
@@ -2443,7 +2462,10 @@ begin
       O => \FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs[2]_i_1_n_0\
     );
 \FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs_reg[0]\: unisim.vcomponents.FDRE
-     port map (
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => s_axi_aclk,
       CE => '1',
       D => \FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs[0]_i_1_n_0\,
@@ -2451,7 +2473,10 @@ begin
       R => \^s_axi_aresetn_0\
     );
 \FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs_reg[1]\: unisim.vcomponents.FDRE
-     port map (
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => s_axi_aclk,
       CE => '1',
       D => \FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs[1]_i_1_n_0\,
@@ -2459,7 +2484,10 @@ begin
       R => \^s_axi_aresetn_0\
     );
 \FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs_reg[2]\: unisim.vcomponents.FDRE
-     port map (
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => s_axi_aclk,
       CE => '1',
       D => \FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs[2]_i_1_n_0\,
@@ -5737,6 +5765,7 @@ architecture STRUCTURE of design1_direct_axi_bram_ctrl_0_0_full_axi is
   signal \ADDR_SNG_PORT.bram_addr_int[7]_i_2_n_0\ : STD_LOGIC;
   signal \ADDR_SNG_PORT.bram_addr_int[8]_i_2_n_0\ : STD_LOGIC;
   signal \ADDR_SNG_PORT.bram_addr_int[9]_i_2_n_0\ : STD_LOGIC;
+  signal \ADDR_SNG_PORT.sng_bram_addr_ld_en\ : STD_LOGIC;
   signal AW2Arb_Active_Clr : STD_LOGIC;
   signal Arb2AR_Active : STD_LOGIC;
   signal Arb2AW_Active : STD_LOGIC;
@@ -5781,7 +5810,6 @@ architecture STRUCTURE of design1_direct_axi_bram_ctrl_0_0_full_axi is
   signal aw_active_re : STD_LOGIC;
   signal curr_fixed_burst_reg : STD_LOGIC;
   signal p_1_in : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal sng_bram_addr_ld_en : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of \ADDR_SNG_PORT.bram_addr_int[10]_i_2\ : label is "soft_lutpair53";
   attribute SOFT_HLUTNM of \ADDR_SNG_PORT.bram_addr_int[5]_i_2\ : label is "soft_lutpair54";
@@ -5899,7 +5927,7 @@ begin
     )
         port map (
       C => s_axi_aclk,
-      CE => sng_bram_addr_ld_en,
+      CE => \ADDR_SNG_PORT.sng_bram_addr_ld_en\,
       D => I_RD_CHNL_n_45,
       Q => \^bram_addr_a\(10),
       R => I_WR_CHNL_n_36
@@ -5910,7 +5938,7 @@ begin
     )
         port map (
       C => s_axi_aclk,
-      CE => sng_bram_addr_ld_en,
+      CE => \ADDR_SNG_PORT.sng_bram_addr_ld_en\,
       D => I_RD_CHNL_n_44,
       Q => \^bram_addr_a\(11),
       R => I_WR_CHNL_n_36
@@ -5921,7 +5949,7 @@ begin
     )
         port map (
       C => s_axi_aclk,
-      CE => sng_bram_addr_ld_en,
+      CE => \ADDR_SNG_PORT.sng_bram_addr_ld_en\,
       D => I_RD_CHNL_n_43,
       Q => \^bram_addr_a\(12),
       R => I_WR_CHNL_n_36
@@ -5932,7 +5960,7 @@ begin
     )
         port map (
       C => s_axi_aclk,
-      CE => sng_bram_addr_ld_en,
+      CE => \ADDR_SNG_PORT.sng_bram_addr_ld_en\,
       D => I_RD_CHNL_n_42,
       Q => \^bram_addr_a\(13),
       R => I_WR_CHNL_n_36
@@ -5943,7 +5971,7 @@ begin
     )
         port map (
       C => s_axi_aclk,
-      CE => sng_bram_addr_ld_en,
+      CE => \ADDR_SNG_PORT.sng_bram_addr_ld_en\,
       D => I_RD_CHNL_n_41,
       Q => \^bram_addr_a\(14),
       R => I_WR_CHNL_n_36
@@ -5954,7 +5982,7 @@ begin
     )
         port map (
       C => s_axi_aclk,
-      CE => sng_bram_addr_ld_en,
+      CE => \ADDR_SNG_PORT.sng_bram_addr_ld_en\,
       D => I_RD_CHNL_n_40,
       Q => \^bram_addr_a\(15),
       R => I_WR_CHNL_n_36
@@ -5965,7 +5993,7 @@ begin
     )
         port map (
       C => s_axi_aclk,
-      CE => sng_bram_addr_ld_en,
+      CE => \ADDR_SNG_PORT.sng_bram_addr_ld_en\,
       D => I_RD_CHNL_n_39,
       Q => \^bram_addr_a\(16),
       R => I_WR_CHNL_n_36
@@ -6119,7 +6147,7 @@ I_RD_CHNL: entity work.design1_direct_axi_bram_ctrl_0_0_rd_chnl
       D(2) => I_RD_CHNL_n_53,
       D(1) => I_RD_CHNL_n_54,
       D(0) => I_RD_CHNL_n_55,
-      E(1) => sng_bram_addr_ld_en,
+      E(1) => \ADDR_SNG_PORT.sng_bram_addr_ld_en\,
       E(0) => I_RD_CHNL_n_38,
       \GEN_NO_RD_CMD_OPT.GEN_AR_SNG.ar_active_d1_reg_0\ => \GEN_ARB.I_SNG_PORT_n_8\,
       \GEN_NO_RD_CMD_OPT.axi_rlast_int_reg_0\ => \^gen_no_rd_cmd_opt.axi_rlast_int_reg\,
@@ -6579,7 +6607,7 @@ entity design1_direct_axi_bram_ctrl_0_0 is
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of design1_direct_axi_bram_ctrl_0_0 : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of design1_direct_axi_bram_ctrl_0_0 : entity is "axi_bram_ctrl,Vivado 2020.2";
+  attribute x_core_info of design1_direct_axi_bram_ctrl_0_0 : entity is "axi_bram_ctrl,Vivado 2023.1";
 end design1_direct_axi_bram_ctrl_0_0;
 
 architecture STRUCTURE of design1_direct_axi_bram_ctrl_0_0 is
@@ -6650,7 +6678,7 @@ architecture STRUCTURE of design1_direct_axi_bram_ctrl_0_0 is
   attribute x_interface_parameter : string;
   attribute x_interface_parameter of bram_rst_a : signal is "XIL_INTERFACENAME BRAM_PORTA, MASTER_TYPE BRAM_CTRL, MEM_SIZE 524288, MEM_WIDTH 32, MEM_ECC NONE, READ_WRITE_MODE READ_WRITE, READ_LATENCY 1";
   attribute x_interface_info of s_axi_aclk : signal is "xilinx.com:signal:clock:1.0 CLKIF CLK";
-  attribute x_interface_parameter of s_axi_aclk : signal is "XIL_INTERFACENAME CLKIF, ASSOCIATED_BUSIF S_AXI:S_AXI_CTRL, ASSOCIATED_RESET s_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design1_direct_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute x_interface_parameter of s_axi_aclk : signal is "XIL_INTERFACENAME CLKIF, ASSOCIATED_BUSIF S_AXI:S_AXI_CTRL, ASSOCIATED_RESET s_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design1_direct_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute x_interface_info of s_axi_aresetn : signal is "xilinx.com:signal:reset:1.0 RSTIF RST";
   attribute x_interface_parameter of s_axi_aresetn : signal is "XIL_INTERFACENAME RSTIF, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   attribute x_interface_info of s_axi_arlock : signal is "xilinx.com:interface:aximm:1.0 S_AXI ARLOCK";
@@ -6678,7 +6706,7 @@ architecture STRUCTURE of design1_direct_axi_bram_ctrl_0_0 is
   attribute x_interface_info of s_axi_arprot : signal is "xilinx.com:interface:aximm:1.0 S_AXI ARPROT";
   attribute x_interface_info of s_axi_arsize : signal is "xilinx.com:interface:aximm:1.0 S_AXI ARSIZE";
   attribute x_interface_info of s_axi_awaddr : signal is "xilinx.com:interface:aximm:1.0 S_AXI AWADDR";
-  attribute x_interface_parameter of s_axi_awaddr : signal is "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 19, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 16, PHASE 0.000, CLK_DOMAIN design1_direct_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute x_interface_parameter of s_axi_awaddr : signal is "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 19, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 16, PHASE 0.0, CLK_DOMAIN design1_direct_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   attribute x_interface_info of s_axi_awburst : signal is "xilinx.com:interface:aximm:1.0 S_AXI AWBURST";
   attribute x_interface_info of s_axi_awcache : signal is "xilinx.com:interface:aximm:1.0 S_AXI AWCACHE";
   attribute x_interface_info of s_axi_awlen : signal is "xilinx.com:interface:aximm:1.0 S_AXI AWLEN";

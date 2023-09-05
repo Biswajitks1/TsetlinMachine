@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "D:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.runs/synth_1/design1_direct_wrapper.tcl"
+  variable script "E:/TsetlinMachine/tsetlin_multiple_images_inference.runs/synth_1/design1_direct_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -77,63 +77,62 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir D:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.cache/wt [current_project]
-set_property parent.project_path D:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.xpr [current_project]
+set_property webtalk.parent_dir E:/TsetlinMachine/tsetlin_multiple_images_inference.cache/wt [current_project]
+set_property parent.project_path E:/TsetlinMachine/tsetlin_multiple_images_inference.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
-set_property ip_output_repo d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.cache/ip [current_project]
+set_property ip_output_repo e:/TsetlinMachine/tsetlin_multiple_images_inference.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib D:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/hdl/design1_direct_wrapper.v
-add_files D:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.srcs/sources_1/bd/design1_direct/design1_direct.bd
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_processing_system7_0_0/design1_direct_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_blk_mem_gen_0_0/design1_direct_blk_mem_gen_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_bram_ctrl_0_0/design1_direct_axi_bram_ctrl_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_1/bd_f811_psr_aclk_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_1/bd_f811_psr_aclk_0.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_2/bd_f811_arsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_3/bd_f811_rsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_4/bd_f811_awsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_5/bd_f811_wsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_6/bd_f811_bsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_10/bd_f811_s00a2s_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_11/bd_f811_sarn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_12/bd_f811_srn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_13/bd_f811_sawn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_14/bd_f811_swn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_15/bd_f811_sbn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_16/bd_f811_m00s2a_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_17/bd_f811_m00arn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_18/bd_f811_m00rn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_19/bd_f811_m00awn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_20/bd_f811_m00wn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_21/bd_f811_m00bn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_23/bd_f811_m01s2a_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_24/bd_f811_m01arn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_25/bd_f811_m01rn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_26/bd_f811_m01awn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_27/bd_f811_m01wn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_28/bd_f811_m01bn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_30/bd_f811_m02s2a_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_31/bd_f811_m02arn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_32/bd_f811_m02rn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_33/bd_f811_m02awn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_34/bd_f811_m02wn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_35/bd_f811_m02bn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_rst_ps7_0_50M_0/design1_direct_rst_ps7_0_50M_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_rst_ps7_0_50M_0/design1_direct_rst_ps7_0_50M_0.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_rst_ps7_0_50M_0/design1_direct_rst_ps7_0_50M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_gpio_0_0/design1_direct_axi_gpio_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_gpio_0_0/design1_direct_axi_gpio_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_gpio_0_0/design1_direct_axi_gpio_0_0.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_gpio_1_0/design1_direct_axi_gpio_1_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_gpio_1_0/design1_direct_axi_gpio_1_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_gpio_1_0/design1_direct_axi_gpio_1_0.xdc]
-set_property used_in_implementation false [get_files -all d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/design1_direct_ooc.xdc]
+read_verilog -library xil_defaultlib E:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/hdl/design1_direct_wrapper.v
+add_files E:/TsetlinMachine/tsetlin_multiple_images_inference.srcs/sources_1/bd/design1_direct/design1_direct.bd
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_bram_ctrl_0_0/design1_direct_axi_bram_ctrl_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_gpio_0_0/design1_direct_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_gpio_0_0/design1_direct_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_gpio_0_0/design1_direct_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_gpio_1_0/design1_direct_axi_gpio_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_gpio_1_0/design1_direct_axi_gpio_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_gpio_1_0/design1_direct_axi_gpio_1_0.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_1/bd_f811_psr_aclk_0_board.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_1/bd_f811_psr_aclk_0.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_2/bd_f811_arsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_3/bd_f811_rsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_4/bd_f811_awsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_5/bd_f811_wsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_6/bd_f811_bsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_10/bd_f811_s00a2s_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_11/bd_f811_sarn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_12/bd_f811_srn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_13/bd_f811_sawn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_14/bd_f811_swn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_15/bd_f811_sbn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_16/bd_f811_m00s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_17/bd_f811_m00arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_18/bd_f811_m00rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_19/bd_f811_m00awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_20/bd_f811_m00wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_21/bd_f811_m00bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_23/bd_f811_m01s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_24/bd_f811_m01arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_25/bd_f811_m01rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_26/bd_f811_m01awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_27/bd_f811_m01wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_28/bd_f811_m01bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_30/bd_f811_m02s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_31/bd_f811_m02arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_32/bd_f811_m02rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_33/bd_f811_m02awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_34/bd_f811_m02wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/bd_0/ip/ip_35/bd_f811_m02bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_smc_0/ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_blk_mem_gen_0_0/design1_direct_blk_mem_gen_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_processing_system7_0_0/design1_direct_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_rst_ps7_0_50M_0/design1_direct_rst_ps7_0_50M_0_board.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_rst_ps7_0_50M_0/design1_direct_rst_ps7_0_50M_0.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_rst_ps7_0_50M_0/design1_direct_rst_ps7_0_50M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/design1_direct_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -144,8 +143,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.srcs/constrs_1/new/constraints.xdc
-set_property used_in_implementation false [get_files D:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.srcs/constrs_1/new/constraints.xdc]
+read_xdc E:/TsetlinMachine/tsetlin_multiple_images_inference.srcs/constrs_1/new/constraints.xdc
+set_property used_in_implementation false [get_files E:/TsetlinMachine/tsetlin_multiple_images_inference.srcs/constrs_1/new/constraints.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

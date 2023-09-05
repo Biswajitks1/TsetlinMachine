@@ -1,10 +1,11 @@
-// Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+// Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Sat Apr  1 11:53:31 2023
-// Host        : LAPTOP-UPJ8ANHP running 64-bit major release  (build 9200)
+// Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+// Date        : Tue Sep  5 13:09:58 2023
+// Host        : LAPTOP-LQMFOCT1 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               d:/tsetlin_multiple_images_inference/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_bram_ctrl_0_0/design1_direct_axi_bram_ctrl_0_0_sim_netlist.v
+//               e:/TsetlinMachine/tsetlin_multiple_images_inference.gen/sources_1/bd/design1_direct/ip/design1_direct_axi_bram_ctrl_0_0/design1_direct_axi_bram_ctrl_0_0_sim_netlist.v
 // Design      : design1_direct_axi_bram_ctrl_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,7 +13,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "design1_direct_axi_bram_ctrl_0_0,axi_bram_ctrl,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "axi_bram_ctrl,Vivado 2020.2" *) 
+(* CHECK_LICENSE_TYPE = "design1_direct_axi_bram_ctrl_0_0,axi_bram_ctrl,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "axi_bram_ctrl,Vivado 2023.1" *) 
 (* NotValidForBitStream *)
 module design1_direct_axi_bram_ctrl_0_0
    (s_axi_aclk,
@@ -55,9 +56,9 @@ module design1_direct_axi_bram_ctrl_0_0
     bram_addr_a,
     bram_wrdata_a,
     bram_rddata_a);
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 CLKIF CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME CLKIF, ASSOCIATED_BUSIF S_AXI:S_AXI_CTRL, ASSOCIATED_RESET s_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design1_direct_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input s_axi_aclk;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 CLKIF CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME CLKIF, ASSOCIATED_BUSIF S_AXI:S_AXI_CTRL, ASSOCIATED_RESET s_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design1_direct_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input s_axi_aclk;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 RSTIF RST" *) (* x_interface_parameter = "XIL_INTERFACENAME RSTIF, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input s_axi_aresetn;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 19, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 16, PHASE 0.000, CLK_DOMAIN design1_direct_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [18:0]s_axi_awaddr;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 19, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 16, PHASE 0.0, CLK_DOMAIN design1_direct_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [18:0]s_axi_awaddr;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI AWLEN" *) input [7:0]s_axi_awlen;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI AWSIZE" *) input [2:0]s_axi_awsize;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI AWBURST" *) input [1:0]s_axi_awburst;
@@ -763,6 +764,7 @@ module design1_direct_axi_bram_ctrl_0_0_full_axi
   wire \ADDR_SNG_PORT.bram_addr_int[7]_i_2_n_0 ;
   wire \ADDR_SNG_PORT.bram_addr_int[8]_i_2_n_0 ;
   wire \ADDR_SNG_PORT.bram_addr_int[9]_i_2_n_0 ;
+  wire \ADDR_SNG_PORT.sng_bram_addr_ld_en ;
   wire AW2Arb_Active_Clr;
   wire Arb2AR_Active;
   wire Arb2AW_Active;
@@ -833,7 +835,6 @@ module design1_direct_axi_bram_ctrl_0_0_full_axi
   wire s_axi_wready;
   wire [3:0]s_axi_wstrb;
   wire s_axi_wvalid;
-  wire sng_bram_addr_ld_en;
 
   (* SOFT_HLUTNM = "soft_lutpair53" *) 
   LUT5 #(
@@ -918,7 +919,7 @@ module design1_direct_axi_bram_ctrl_0_0_full_axi
     .INIT(1'b0)) 
     \ADDR_SNG_PORT.bram_addr_int_reg[12] 
        (.C(s_axi_aclk),
-        .CE(sng_bram_addr_ld_en),
+        .CE(\ADDR_SNG_PORT.sng_bram_addr_ld_en ),
         .D(I_RD_CHNL_n_45),
         .Q(BRAM_Addr_A[10]),
         .R(I_WR_CHNL_n_36));
@@ -926,7 +927,7 @@ module design1_direct_axi_bram_ctrl_0_0_full_axi
     .INIT(1'b0)) 
     \ADDR_SNG_PORT.bram_addr_int_reg[13] 
        (.C(s_axi_aclk),
-        .CE(sng_bram_addr_ld_en),
+        .CE(\ADDR_SNG_PORT.sng_bram_addr_ld_en ),
         .D(I_RD_CHNL_n_44),
         .Q(BRAM_Addr_A[11]),
         .R(I_WR_CHNL_n_36));
@@ -934,7 +935,7 @@ module design1_direct_axi_bram_ctrl_0_0_full_axi
     .INIT(1'b0)) 
     \ADDR_SNG_PORT.bram_addr_int_reg[14] 
        (.C(s_axi_aclk),
-        .CE(sng_bram_addr_ld_en),
+        .CE(\ADDR_SNG_PORT.sng_bram_addr_ld_en ),
         .D(I_RD_CHNL_n_43),
         .Q(BRAM_Addr_A[12]),
         .R(I_WR_CHNL_n_36));
@@ -942,7 +943,7 @@ module design1_direct_axi_bram_ctrl_0_0_full_axi
     .INIT(1'b0)) 
     \ADDR_SNG_PORT.bram_addr_int_reg[15] 
        (.C(s_axi_aclk),
-        .CE(sng_bram_addr_ld_en),
+        .CE(\ADDR_SNG_PORT.sng_bram_addr_ld_en ),
         .D(I_RD_CHNL_n_42),
         .Q(BRAM_Addr_A[13]),
         .R(I_WR_CHNL_n_36));
@@ -950,7 +951,7 @@ module design1_direct_axi_bram_ctrl_0_0_full_axi
     .INIT(1'b0)) 
     \ADDR_SNG_PORT.bram_addr_int_reg[16] 
        (.C(s_axi_aclk),
-        .CE(sng_bram_addr_ld_en),
+        .CE(\ADDR_SNG_PORT.sng_bram_addr_ld_en ),
         .D(I_RD_CHNL_n_41),
         .Q(BRAM_Addr_A[14]),
         .R(I_WR_CHNL_n_36));
@@ -958,7 +959,7 @@ module design1_direct_axi_bram_ctrl_0_0_full_axi
     .INIT(1'b0)) 
     \ADDR_SNG_PORT.bram_addr_int_reg[17] 
        (.C(s_axi_aclk),
-        .CE(sng_bram_addr_ld_en),
+        .CE(\ADDR_SNG_PORT.sng_bram_addr_ld_en ),
         .D(I_RD_CHNL_n_40),
         .Q(BRAM_Addr_A[15]),
         .R(I_WR_CHNL_n_36));
@@ -966,7 +967,7 @@ module design1_direct_axi_bram_ctrl_0_0_full_axi
     .INIT(1'b0)) 
     \ADDR_SNG_PORT.bram_addr_int_reg[18] 
        (.C(s_axi_aclk),
-        .CE(sng_bram_addr_ld_en),
+        .CE(\ADDR_SNG_PORT.sng_bram_addr_ld_en ),
         .D(I_RD_CHNL_n_39),
         .Q(BRAM_Addr_A[16]),
         .R(I_WR_CHNL_n_36));
@@ -1076,7 +1077,7 @@ module design1_direct_axi_bram_ctrl_0_0_full_axi
         .Arb2AR_Active(Arb2AR_Active),
         .BRAM_En_B_i(BRAM_En_B_i),
         .D({I_RD_CHNL_n_39,I_RD_CHNL_n_40,I_RD_CHNL_n_41,I_RD_CHNL_n_42,I_RD_CHNL_n_43,I_RD_CHNL_n_44,I_RD_CHNL_n_45,I_RD_CHNL_n_46,I_RD_CHNL_n_47,I_RD_CHNL_n_48,I_RD_CHNL_n_49,I_RD_CHNL_n_50,I_RD_CHNL_n_51,I_RD_CHNL_n_52,I_RD_CHNL_n_53,I_RD_CHNL_n_54,I_RD_CHNL_n_55}),
-        .E({sng_bram_addr_ld_en,I_RD_CHNL_n_38}),
+        .E({\ADDR_SNG_PORT.sng_bram_addr_ld_en ,I_RD_CHNL_n_38}),
         .\GEN_NO_RD_CMD_OPT.GEN_AR_SNG.ar_active_d1_reg_0 (\GEN_ARB.I_SNG_PORT_n_8 ),
         .\GEN_NO_RD_CMD_OPT.axi_rlast_int_reg_0 (\GEN_NO_RD_CMD_OPT.axi_rlast_int_reg ),
         .\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 (\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg ),
@@ -1530,28 +1531,36 @@ module design1_direct_axi_bram_ctrl_0_0_rd_chnl
         .I1(brst_zero),
         .O(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_5_n_0 ));
   (* FSM_ENCODED_STATES = "sec_addr:0010,sng_addr:0001,last_data_ar_pend:1000,idle:0000,last_addr:0101,last_data:0111,full_throttle:0100,last_throttle:0110,full_pipe:0011" *) 
-  FDRE \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg[0] 
+  FDRE #(
+    .INIT(1'b0)) 
+    \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg[0] 
        (.C(s_axi_aclk),
         .CE(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_1_n_0 ),
         .D(rd_data_sm_ns[0]),
         .Q(rd_data_sm_cs[0]),
         .R(s_axi_aresetn_0));
   (* FSM_ENCODED_STATES = "sec_addr:0010,sng_addr:0001,last_data_ar_pend:1000,idle:0000,last_addr:0101,last_data:0111,full_throttle:0100,last_throttle:0110,full_pipe:0011" *) 
-  FDRE \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg[1] 
+  FDRE #(
+    .INIT(1'b0)) 
+    \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg[1] 
        (.C(s_axi_aclk),
         .CE(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_1_n_0 ),
         .D(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[1]_i_1_n_0 ),
         .Q(rd_data_sm_cs[1]),
         .R(s_axi_aresetn_0));
   (* FSM_ENCODED_STATES = "sec_addr:0010,sng_addr:0001,last_data_ar_pend:1000,idle:0000,last_addr:0101,last_data:0111,full_throttle:0100,last_throttle:0110,full_pipe:0011" *) 
-  FDRE \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg[2] 
+  FDRE #(
+    .INIT(1'b0)) 
+    \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg[2] 
        (.C(s_axi_aclk),
         .CE(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_1_n_0 ),
         .D(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[2]_i_1_n_0 ),
         .Q(rd_data_sm_cs[2]),
         .R(s_axi_aresetn_0));
   (* FSM_ENCODED_STATES = "sec_addr:0010,sng_addr:0001,last_data_ar_pend:1000,idle:0000,last_addr:0101,last_data:0111,full_throttle:0100,last_throttle:0110,full_pipe:0011" *) 
-  FDRE \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg[3] 
+  FDRE #(
+    .INIT(1'b0)) 
+    \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg[3] 
        (.C(s_axi_aclk),
         .CE(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_1_n_0 ),
         .D(rd_data_sm_ns[3]),
@@ -1608,21 +1617,27 @@ module design1_direct_axi_bram_ctrl_0_0_rd_chnl
         .I5(last_bram_addr),
         .O(\FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs[2]_i_1_n_0 ));
   (* FSM_ENCODED_STATES = "idle:000,w8_last_data:100,w8_2nd_last_data:011,w8_throttle:010,w8_throttle_b2:001" *) 
-  FDRE \FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs_reg[0] 
+  FDRE #(
+    .INIT(1'b0)) 
+    \FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs_reg[0] 
        (.C(s_axi_aclk),
         .CE(1'b1),
         .D(\FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs[0]_i_1_n_0 ),
         .Q(rlast_sm_cs[0]),
         .R(s_axi_aresetn_0));
   (* FSM_ENCODED_STATES = "idle:000,w8_last_data:100,w8_2nd_last_data:011,w8_throttle:010,w8_throttle_b2:001" *) 
-  FDRE \FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs_reg[1] 
+  FDRE #(
+    .INIT(1'b0)) 
+    \FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs_reg[1] 
        (.C(s_axi_aclk),
         .CE(1'b1),
         .D(\FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs[1]_i_1_n_0 ),
         .Q(rlast_sm_cs[1]),
         .R(s_axi_aresetn_0));
   (* FSM_ENCODED_STATES = "idle:000,w8_last_data:100,w8_2nd_last_data:011,w8_throttle:010,w8_throttle_b2:001" *) 
-  FDRE \FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs_reg[2] 
+  FDRE #(
+    .INIT(1'b0)) 
+    \FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs_reg[2] 
        (.C(s_axi_aclk),
         .CE(1'b1),
         .D(\FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs[2]_i_1_n_0 ),
@@ -3481,14 +3496,18 @@ module design1_direct_axi_bram_ctrl_0_0_sng_port_arb
         .I4(s_axi_awvalid),
         .O(\FSM_sequential_arb_sm_cs[1]_i_3_n_0 ));
   (* FSM_ENCODED_STATES = "wr_data:01,idle:00,rd_data:10" *) 
-  FDRE \FSM_sequential_arb_sm_cs_reg[0] 
+  FDRE #(
+    .INIT(1'b0)) 
+    \FSM_sequential_arb_sm_cs_reg[0] 
        (.C(s_axi_aclk),
         .CE(1'b1),
         .D(\FSM_sequential_arb_sm_cs[0]_i_1_n_0 ),
         .Q(arb_sm_cs[0]),
         .R(ar_active_reg_1));
   (* FSM_ENCODED_STATES = "wr_data:01,idle:00,rd_data:10" *) 
-  FDRE \FSM_sequential_arb_sm_cs_reg[1] 
+  FDRE #(
+    .INIT(1'b0)) 
+    \FSM_sequential_arb_sm_cs_reg[1] 
        (.C(s_axi_aclk),
         .CE(1'b1),
         .D(\FSM_sequential_arb_sm_cs[1]_i_1_n_0 ),

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1681882158">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1693910207">
   <File Type="PA-TCL" Name="design1_direct_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="design1_direct_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="design1_direct_wrapper_reports.tcl"/>
@@ -102,7 +102,7 @@
       <Option Name="TopModule" Val="design1_direct_wrapper"/>
     </Config>
   </FileSet>
-  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/new/constraints.xdc">
       <FileInfo>
@@ -115,7 +115,7 @@
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
-  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
     <Filter Type="Utils"/>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
@@ -132,4 +132,5 @@
   <BlockFileSet Type="BlockSrcs" Name="design1_direct_axi_bram_ctrl_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design1_direct_inference_bram_inter_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design1_direct_rst_ps7_0_50M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design1_direct_axi_smc_0"/>
 </GenRun>
