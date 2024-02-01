@@ -3,10 +3,10 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Tue Sep  5 15:56:31 2023
-# Process ID: 14476
+# Start of session at: Sun Oct 29 18:58:05 2023
+# Process ID: 20692
 # Current directory: E:/TsetlinMachine
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8052 E:\TsetlinMachine\tsetlin_multiple_images_inference.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22872 E:\TsetlinMachine\tsetlin_multiple_images_inference.xpr
 # Log file: E:/TsetlinMachine/vivado.log
 # Journal file: E:/TsetlinMachine\vivado.jou
 # Running On: LAPTOP-LQMFOCT1, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 4, Host memory: 16945 MB
@@ -34,9 +34,19 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2023.1/data/ip'.
-open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:24 . Memory (MB): peak = 2536.395 ; gain = 464.887
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:35 . Memory (MB): peak = 2574.816 ; gain = 517.578
 update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs synth_1 -jobs 6
-[Tue Sep  5 16:06:47 2023] Launched synth_1...
-Run output will be captured here: E:/TsetlinMachine/tsetlin_multiple_images_inference.runs/synth_1/runme.log
+open_bd_design {E:/TsetlinMachine/tsetlin_multiple_images_inference.srcs/sources_1/bd/design1_direct/design1_direct.bd}
+Reading block design file <E:/TsetlinMachine/tsetlin_multiple_images_inference.srcs/sources_1/bd/design1_direct/design1_direct.bd>...
+Adding component instance block -- xilinx.com:module_ref:inference_bram_interface:1.0 - inference_bram_inter_0
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_1
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Successfully read diagram <design1_direct> from block design file <E:/TsetlinMachine/tsetlin_multiple_images_inference.srcs/sources_1/bd/design1_direct/design1_direct.bd>
+open_bd_design: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 2598.645 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 29 21:00:15 2023...
